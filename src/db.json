@@ -1,0 +1,52 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "teste@email.com.br",
+      "password": "123456",
+      "token": "token"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Marcos Business",
+      "cpf": "213.123.123-45",
+      "email": "mvbusiness07@gmail.com",
+      "endereco": "av paulista",
+      "cep": "3881000",
+      "cidade": "Haifa",
+      "rua": "asdas",
+      "numero": "d23234",
+      "bairro": "asd"
+    },
+    {
+      "nome": "Marcos Business",
+      "email": "mvbusiness07@gmail.com",
+      "endereco": "Yoav Street",
+      "id": 2
+    },
+    {
+      "nome": "Marcos",
+      "cpf": "200.333.111-23",
+      "email": "teste@teste.com",
+      "cep": "31110111",
+      "rua": "Av. Bosque da Saude",
+      "numero": "999",
+      "bairro": "Saúde",
+      "cidade": "São Paulo",
+      "id": 3
+    },
+    {
+      "nome": "Marcos wewew",
+      "cpf": "",
+      "email": "mvbusiness07@gmail.com",
+      "cep": "3881000",
+      "rua": "wewe",
+      "numero": "222",
+      "bairro": "ddd",
+      "cidade": "Haifa",
+      "id": 4
+    }
+  ]
+}

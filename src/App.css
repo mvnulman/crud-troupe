@@ -1,38 +1,177 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.login-container {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 5px;
+  margin: 200px auto;
+  width: 500px;
+  box-shadow: 1px 1px 1px #e9e9e9;  
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-login {
+  background-color: #0487d3;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #acacac;
+}
+
+.btn-login:hover {
+  background-color: #00466e;
+  transform: scaleX(1.01);
+}
+
+.validation-error {
+  color: red;
+  font-size: 14px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 55px;
+  height: 55px;
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  cursor: pointer;
+}
+
+img.logo-navbar {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+}
+
+.clients-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #0f73e6;
+  color: #fff;
+}
+
+.clients-navbar h1 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.navbar-buttons button {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #0F73E6;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.clients-navbar button:hover {
+  background-color: #034999;
+}
+
+.register-form {
+  width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #e9e9e9;
+}
+
+.register-form button {
+  background-color: #0487d3;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #acacac;
+}
+
+.register-form button:hover {
+  background-color: #004e7a;
+}
+
+/* loading spinner */
+.lds-ring {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 120px auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
-
-.App-link {
-  color: #61dafb;
+.lds-ring div {
+  display: block;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin: 8px;
+  border: 8px solid #0487d3;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #0487d3 transparent transparent transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
