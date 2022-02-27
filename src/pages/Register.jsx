@@ -2,6 +2,11 @@ import { FormGroup, FormControl, Input, InputLabel, Button} from "@mui/material"
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import NavBar from "../components/Navbar";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+// Sweet Alert const required to work with React
+const MySwal = withReactContent(Swal)
 
 const initialValues = {
   nome: "",
@@ -15,6 +20,8 @@ const initialValues = {
   cidade: "",
 };
 
+
+
 const Register = () => {
   const url = "http://localhost:5000/clientes";
   const [user, setUser] = useState(initialValues);
@@ -23,6 +30,7 @@ const Register = () => {
   const onValueChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+  
 
   const addUser = () => {
     fetch(url, {
@@ -47,13 +55,26 @@ const Register = () => {
       });
   };
 
+  const navigateTo = useNavigate();  
+  
   const handleRegister = (e) => {
     if (nome === "" || cpf === "" || email === "" || cep === "" || rua === "" || numero === "" || bairro === "" || cidade === "") {
-      alert("Preencha todos os campos");
+      MySwal.fire({
+        title: 'Preencha todos os campos',
+        icon: 'error',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Ok'
+      })
     } else {
       e.preventDefault();
       addUser();
       navigateTo("/clients");
+      MySwal.fire({
+        title: 'Usuário cadastrado com sucesso!',
+        icon: 'success',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Ok'
+      })
     }
   };
 
@@ -74,7 +95,6 @@ const Register = () => {
       });
   };
 
-  const navigateTo = useNavigate();
 
   return (
     <>
@@ -82,7 +102,7 @@ const Register = () => {
       <FormGroup className="register-form">
         <FormControl required={true} margin="dense">
           <InputLabel>Nome</InputLabel>
-          <Input onChange={(e) => onValueChange(e)} name="nome" value={nome} />
+          <Input onChange={(e) => onValueChange(e)} name="nome" value={nome} required={true}/>
         </FormControl>
         <FormControl required={true} margin="dense">
           <InputLabel>CPF</InputLabel>

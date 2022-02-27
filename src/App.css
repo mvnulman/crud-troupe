@@ -175,3 +175,7 @@ img.logo-navbar {
     transform: rotate(360deg);
   }
 }
+
+.MuiFormLabel-asterisk {
+  color: red;
+}

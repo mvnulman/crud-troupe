@@ -21,12 +21,6 @@
       "bairro": "asd"
     },
     {
-      "nome": "Marcos Business",
-      "email": "mvbusiness07@gmail.com",
-      "endereco": "Yoav Street",
-      "id": 2
-    },
-    {
       "nome": "Marcos",
       "cpf": "200.333.111-23",
       "email": "teste@teste.com",
@@ -38,15 +32,26 @@
       "id": 3
     },
     {
-      "nome": "Marcos wewew",
-      "cpf": "",
-      "email": "mvbusiness07@gmail.com",
-      "cep": "3881000",
-      "rua": "wewe",
-      "numero": "222",
-      "bairro": "ddd",
-      "cidade": "Haifa",
-      "id": 4
+      "nome": "teste",
+      "cpf": "teste",
+      "email": "teste",
+      "cep": "04142-081",
+      "rua": "Avenida Bosque da Saúde",
+      "numero": "asda",
+      "bairro": "Saúde",
+      "cidade": "São Paulo",
+      "id": 5
+    },
+    {
+      "nome": "Ricardo",
+      "cpf": "230.232.059-3",
+      "email": "teste@teste.com.br",
+      "cep": "01311-200",
+      "rua": "Avenida Paulista",
+      "numero": "1439",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "id": 6
     }
   ]
 }
