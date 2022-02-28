@@ -52,6 +52,17 @@
       "bairro": "Bela Vista",
       "cidade": "São Paulo",
       "id": 6
+    },
+    {
+      "nome": "Marcos Business",
+      "cpf": "230.942.138-20",
+      "email": "mvbusiness07@gmail.com",
+      "cep": "3881000",
+      "rua": "123",
+      "numero": "111",
+      "bairro": "Saúde",
+      "cidade": "Haifa",
+      "id": 7
     }
   ]
 }

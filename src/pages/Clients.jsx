@@ -5,21 +5,21 @@ import tableIcons from "../components/MaterialTableIcons";
 import Navbar from "../components/Navbar";
 
 const Clients = () => {
-  const url = "http://localhost:5000/clientes";
+  const url = "http://localhost:8000/clientes";
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   // hook created to fetch data from the json-server and render into the UI everytime the component is mounted
   useEffect(() => {
     getClients();
-  }, []);
+  }, [data]);
 
   //function to get all the clients throught the json-server, using GET method.
   const getClients = () => {
     fetch(url).then((res) => {
       res.json().then((data) => {
-        setData(data);
         setLoading(true);
+        setData(data);
       });
     });
   };

@@ -23,7 +23,7 @@ const initialValues = {
 
 
 const Register = () => {
-  const url = "http://localhost:5000/clientes";
+  const url = "http://localhost:8000/clientes";
   const [user, setUser] = useState(initialValues);
   const { nome, cpf, email, cep, rua, numero, bairro, cidade } = user;
 
@@ -67,14 +67,14 @@ const Register = () => {
       })
     } else {
       e.preventDefault();
-      addUser();
-      navigateTo("/clients");
+      addUser(); 
       MySwal.fire({
         title: 'Usuário cadastrado com sucesso!',
         icon: 'success',
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Ok'
       })
+      navigateTo("/clients");
     }
   };
 
