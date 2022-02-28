@@ -63,6 +63,17 @@
       "bairro": "Saúde",
       "cidade": "Haifa",
       "id": 7
+    },
+    {
+      "nome": "Marcos Teste",
+      "cpf": "12312312313",
+      "email": "teste@teste.io",
+      "cep": "04142-081",
+      "rua": "Avenida Bosque da Saúde",
+      "numero": "222",
+      "bairro": "Saúde",
+      "cidade": "São Paulo",
+      "id": 8
     }
   ]
 }

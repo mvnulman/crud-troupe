@@ -1,4 +1,5 @@
 import { FormGroup, FormControl, Input, InputLabel, Button} from "@mui/material";
+import { validateEmail} from "../utils/regex";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import NavBar from "../components/Navbar";
@@ -7,6 +8,7 @@ import withReactContent from 'sweetalert2-react-content'
 
 // Sweet Alert const required to work with React
 const MySwal = withReactContent(Swal)
+
 
 const initialValues = {
   nome: "",
@@ -25,7 +27,19 @@ const initialValues = {
 const Register = () => {
   const url = "http://localhost:8000/clientes";
   const [user, setUser] = useState(initialValues);
+  const [emailErr, setEmailErr] = useState(false);
   const { nome, cpf, email, cep, rua, numero, bairro, cidade } = user;
+
+
+  // Email validation function
+  const emailValidation = () => {
+    if (!validateEmail.test(email)) {
+      setEmailErr(true);
+    } else {
+      setEmailErr(false);
+    }
+  }
+
 
   const onValueChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -113,9 +127,13 @@ const Register = () => {
           <Input
             type="email"
             onChange={(e) => onValueChange(e)}
+            onBlur={emailValidation}
             name="email"
             value={email}
           />
+          {emailErr ? (
+            <p className="validation-error">E-mail inválido!</p>
+          ) : null}
         </FormControl>
         <FormControl required={true} margin="dense">
           <InputLabel>CEP</InputLabel>

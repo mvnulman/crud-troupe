@@ -60,8 +60,8 @@ input {
 
 .validation-error {
   color: red;
-  font-size: 14px;
-  text-align: center;
+  font-size: 13px;
+  text-align: left;
 }
 
 img {
@@ -177,5 +177,9 @@ img.logo-navbar {
 }
 
 .MuiFormLabel-asterisk {
+  color: red;
+}
+
+.Mui-error {
   color: red;
 }
