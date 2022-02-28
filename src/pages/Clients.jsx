@@ -12,7 +12,7 @@ const Clients = () => {
   // hook created to fetch data from the json-server and render into the UI everytime the component is mounted
   useEffect(() => {
     getClients();
-  }, [data]);
+  }, []);
 
   //function to get all the clients throught the json-server, using GET method.
   const getClients = () => {
@@ -54,24 +54,28 @@ const Clients = () => {
     {
       title: "CEP",
       field: "cep",
+      hidden: true,
       validate: (rowData) =>
         rowData.cep === undefined ? "Campo obrigatório" : true,
     },
     {
       title: "Rua",
       field: "rua",
+      hidden: true,
       validate: (rowData) =>
         rowData.rua === undefined ? "Campo obrigatório" : true,
     },
     {
       title: "Número",
       field: "numero",
+      hidden: true,
       validate: (rowData) =>
         rowData.numero === undefined ? "Campo obrigatório" : true,
     },
     {
       title: "Bairro",
       field: "bairro",
+      hidden: true,
       validate: (rowData) =>
         rowData.bairro === undefined ? "Campo obrigatório" : true,
     },

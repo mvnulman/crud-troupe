@@ -61,7 +61,7 @@
       "rua": "123",
       "numero": "111",
       "bairro": "Saúde",
-      "cidade": "Haifa",
+      "cidade": "Haifas",
       "id": 7
     },
     {
@@ -74,6 +74,17 @@
       "bairro": "Saúde",
       "cidade": "São Paulo",
       "id": 8
+    },
+    {
+      "nome": "José Luiz",
+      "cpf": "88888888888",
+      "email": "joseluiz@teste.com.br",
+      "cep": "01311-300",
+      "rua": "Avenida Paulista",
+      "numero": "777",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "id": 9
     }
   ]
 }
