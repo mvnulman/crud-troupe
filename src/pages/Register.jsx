@@ -106,7 +106,7 @@ const Register = () => {
         </FormControl>
         <FormControl required={true} margin="dense">
           <InputLabel>CPF</InputLabel>
-          <Input onChange={(e) => onValueChange(e)} name="cpf" value={cpf} />
+          <Input onChange={(e) => onValueChange(e)} name="cpf" value={cpf} inputProps={{ maxLength: 11}}/>
         </FormControl>
         <FormControl required={true} margin="dense">
           <InputLabel>E-mail</InputLabel>
@@ -124,6 +124,7 @@ const Register = () => {
             onChange={(e) => onValueChange(e)}
             name="cep"
             value={cep}
+            inputProps={{ maxLength: 8}}
           />
         </FormControl>
         <FormControl required={true} margin="dense">
