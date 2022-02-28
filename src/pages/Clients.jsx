@@ -24,6 +24,8 @@ const Clients = () => {
     });
   };
 
+
+
   const columns = [
     {
       title: "Nome",
