@@ -132,7 +132,7 @@ const Register = () => {
             value={email}
           />
           {emailErr ? (
-            <p className="validation-error">E-mail inválido!</p>
+            <p className="error-message">E-mail inválido</p>
           ) : null}
         </FormControl>
         <FormControl required={true} margin="dense">

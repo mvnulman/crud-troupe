@@ -8,14 +8,15 @@ const Login = () => {
   const navigateTo = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [emailErr, setEmailErr] = useState(false);
   const [passwordErr, setPasswordErr] = useState(false);
 
+  
   // input login validations
   const validateEmailPassword = () => {
     if (!validateEmail.test(email)) {
       setEmailErr(true);
+      
     } else {
       setEmailErr(false);
     }
@@ -56,13 +57,13 @@ const Login = () => {
             <label>E-mail</label>
             <input
               type="email"
-              placeholder="Enter your e-mail"
+              placeholder="Digite seu email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             {emailErr && (
               <p className="validation-error">
-                Please enter a valid email address!
+                Insira um e-mail válido!
               </p>
             )}
           </div>
@@ -71,14 +72,14 @@ const Login = () => {
             <label>Password</label>
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="Digite sua senha"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             {passwordErr && (
               <p className="validation-error">
-                Invalid password! must be at least 4 characters, 1 letter and 1
-                number
+                Senha inválida! Mínimo 4 caracteres, 1 letra and 1
+                número
               </p>
             )}
             <button onClick={handleSubmit} className="btn-login" type="submit">

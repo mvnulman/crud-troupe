@@ -10,31 +10,30 @@
   "clientes": [
     {
       "id": 1,
-      "nome": "Marcos Business",
+      "nome": "Marcos Vinicius",
       "cpf": "213.123.123-45",
-      "email": "mvbusiness07@gmail.com",
-      "endereco": "av paulista",
-      "cep": "3881000",
-      "cidade": "Haifa",
-      "rua": "asdas",
-      "numero": "d23234",
-      "bairro": "asd"
+      "email": "marcos@gmail.com",
+      "cep": "01310-300",
+      "cidade": "São Paulo",
+      "rua": "Av. Paulista",
+      "numero": "2644",
+      "bairro": "Consolação"
     },
     {
       "nome": "Marcos",
       "cpf": "200.333.111-23",
       "email": "teste@teste.com",
       "cep": "31110111",
-      "rua": "Av. Bosque da Saude",
+      "rua": "Av. São Joao",
       "numero": "999",
       "bairro": "Saúde",
       "cidade": "São Paulo",
       "id": 3
     },
     {
-      "nome": "teste",
-      "cpf": "teste",
-      "email": "teste",
+      "nome": "Thais Perez",
+      "cpf": "200.111.444-22",
+      "email": "thais.perez@gmail.com",
       "cep": "04142-081",
       "rua": "Avenida Bosque da Saúde",
       "numero": "asda",
@@ -43,7 +42,7 @@
       "id": 5
     },
     {
-      "nome": "Ricardo",
+      "nome": "Ricardo Oliveira",
       "cpf": "230.232.059-3",
       "email": "teste@teste.com.br",
       "cep": "01311-200",
@@ -54,18 +53,18 @@
       "id": 6
     },
     {
-      "nome": "Marcos Business",
+      "nome": "Narciso",
       "cpf": "230.942.138-20",
-      "email": "mvbusiness07@gmail.com",
+      "email": "narciso@gmail.com",
       "cep": "3881000",
       "rua": "123",
       "numero": "111",
       "bairro": "Saúde",
-      "cidade": "Haifas",
+      "cidade": "São Paulo",
       "id": 7
     },
     {
-      "nome": "Marcos Teste",
+      "nome": "Mariana Ferreira",
       "cpf": "12312312313",
       "email": "teste@teste.io",
       "cep": "04142-081",
@@ -77,10 +76,10 @@
     },
     {
       "nome": "José Luiz",
-      "cpf": "88888888888",
+      "cpf": "999.999.999-45",
       "email": "joseluiz@teste.com.br",
       "cep": "01311-300",
-      "rua": "Avenida Paulista",
+      "rua": "Rua Cerqueira César",
       "numero": "777",
       "bairro": "Bela Vista",
       "cidade": "São Paulo",
