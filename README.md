@@ -14,7 +14,7 @@
 
 - [React](https://pt-br.reactjs.org)
 - [React Hooks]
-- [React-Router]
+- [React-Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Material UI](https://mui.com/)
 - [JSON-Server](https://https://github.com/typicode/json-server/)
 - [CSS]
