@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# CRUD - Troupe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### CRUD application developed for the company Troupe
+<br>
 
-## Available Scripts
+![1](https://user-images.githubusercontent.com/63374582/156173850-6f7354b3-d388-4b97-8f22-5a0a9e2181e7.png)
 
-In the project directory, you can run:
+![2](https://user-images.githubusercontent.com/63374582/156174345-bb14c50f-890f-4b0b-bcef-e929436bd9c1.png)
 
-### `npm start`
+![3](https://user-images.githubusercontent.com/63374582/156174429-a47d95c2-43ee-42a5-82ce-15d07c4b8f29.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧪 Technologies
 
-### `npm test`
+- [React](https://pt-br.reactjs.org)
+- [React Hooks]
+- [React-Router]
+- [JSON-Server](https://https://github.com/typicode/json-server/)
+- [CSS]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 How to run the project
 
-### `npm run build`
+To run the project you need to have [Node.js](https://nodejs.dev) and [Git](https://git-scm.com) installed on your machine. You will also need a text editor, I used [VSCode](https://code.visualstudio.com).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone this repository.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/mvnulman/crud-troupe.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+# Client (Front-End)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Access the project folder.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+ cd .\crud-troupe\
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+yarn 
+```
+or
+```
+npm install
+```
 
-## Learn More
+3. Run the application in development mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+yarn start
+```
+or
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
 
-### Code Splitting
+4. Access the Local Host
+```
+https://localhost:3000
+```
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Server (Back-End)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Access the /src project folder.
 
-### Making a Progressive Web App
+```
+ cd .\crud-troupe\src
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install the JSON-Server globally in your machine
+```
+yarn global add json-server
+```
+or
+```
+npm install -g json-server
+```
 
-### Advanced Configuration
+3. Run the server, using this command:
+```
+json-server --watch db.json --delay 2000 --port 8000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* The port 5000 was changed due conflicts with the Control Center service on macOS Monterey using this port.
+```
 
-### Deployment
+# Features
+## Login:
+- [x] E-mail input validation;
+- [x] Password input with +4 characters validation;
+- [x] Storage one Token after the Submit button on the Login component;
+- [x] Logout button with redirection to the Login page when pressed;
+- [ ] Only logged users can see the Register Clients form / Clients List (Working in progress with ProtectedRoutes / Auth state implementation 🚧);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Register Clients Form:
+- [x] Nome, CPF, Email, CEP, Rua, Número, Bairro, Cidade inputs connected with the JSON-Server via https methods(GET / PUT / POST / DELETE);
+- [x] All inputs above required (With Sweet Alert dependecy to user visual notification)
+- [x] ViaCEP fetch API working on the Register component;
+- [ ] MaskInput on CEP input (Working in progress 🚧);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Clients List:
+- [x] Nome, CPF, Email, CEP table / input showed to the user;
+- [x] Button to Add / Edit / Delete client's info;
+- [x] Search field working properly;
+- [x] Loading spinner notification displayed to the user during the fetch getUser infos;
+- [x] Pagination / Sort;
+- [ ] Responsive (Working in progress 🚧)
+<br><br>
+
+
+# 📝 License
+
+This project is licensed under [MIT](/LICENSE).
