@@ -15,7 +15,7 @@
 - [React](https://pt-br.reactjs.org)
 - [React Hooks]
 - [React-Router]
-- [Material UI] (https://mui.com/)
+- [Material UI](https://mui.com/)
 - [JSON-Server](https://https://github.com/typicode/json-server/)
 - [CSS]
 
