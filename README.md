@@ -100,7 +100,7 @@ json-server --watch db.json --delay 2000 --port 8000
 
 
 ## Register Clients Form:
-- [x] Nome, CPF, Email, CEP, Rua, Número, Bairro, Cidade inputs connected with the JSON-Server via https methods(GET / PUT / POST / DELETE);
+- [x] Nome, CPF, Email, CEP, Rua, Número, Bairro, Cidade inputs connected with the JSON-Server via HTTP methods(GET / PUT / POST / DELETE);
 - [x] All inputs above required (With Sweet Alert dependecy to user visual notification)
 - [x] ViaCEP fetch API working on the Register component;
 - [ ] MaskInput on CEP input (Working in progress 🚧);
